@@ -8,7 +8,7 @@
   },
   "type": "module",
   "scripts": {
-    "start": "node index.js",
+    "start": "node weather.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -17,13 +17,13 @@
   ],
   "author": "Sergei Yurkin",
   "license": "ISC",
-  "homepage": "https://purpleschool.ru",
+  "homepage": "https://github.com/Mkezhman85",
   "repository": {
     "type": "git",
-    "url": "https://purpleschool.ru"
+    "url": "https://github.com/Mkezhman85/weather-cli"
   },
   "bugs": {
-    "url": "https://purpleschool.ru",
+    "url": "https://github.com/Mkezhman85",
     "email": "mkezhman85@gmail.com"
   },
   "dependencies": {
