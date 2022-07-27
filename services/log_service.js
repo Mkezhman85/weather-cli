@@ -1,6 +1,5 @@
-import chalk from 'chalk' // common-js бибилиотека
+import chalk from 'chalk'
 import dedent from 'dedent-js'
-import { getKeyValue, TOKEN_DICTIONARY } from './storage_service.js'
 
 
 const printError = (error) => {
@@ -22,18 +21,6 @@ const printHelp = () => {
 		`)
 	)
 }
-
-// const printWeather = (res, icon) => {
-// 	console.log(
-// 		dedent(`${chalk.bgYellow(` WEATHER `)} Погода в городе ${res.name}
-// 		${icon} ${res.weather[0].description}
-// 		Температура: ${res.main.temp} (ощущается как ${res.main.feels.like})
-// 		Влажность: ${res.main.humidity}
-// 		Скорость ветра: ${res.wind.speed}
-// 		`)
-// 	)
-// }
-
 
 const printWeather = (res, icon) => {
 	console.log(

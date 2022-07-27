@@ -1,9 +1,5 @@
 import axios from 'axios'
-import https from 'https'
-import { URLSearchParams } from 'url'
 import { getKeyValue, TOKEN_DICTIONARY } from './storage_service.js'
-import chalk from 'chalk'
-import { url } from 'inspector'
 
 const getIcon = (icon) => {
 	switch (icon.slice(0, -1)) {
@@ -49,29 +45,6 @@ const getWeather = async (city) => {
 		}
 	})
 	return data
- 
-
-	// const url = new URL('https://api.openweathermap.org/data/2.5/weather')
-
-	// url.searchParams.append('q', city)
-	// url.searchParams.append('appid', token)
-	// url.searchParams.append('lang', 'ru')
-	// url.searchParams.append('units', 'metric')
-
-	// https.get(url, (response) => {
-		
-	// 	let res = ''
-
-	// 	response.on('data', (chunk) => {
-	// 		res += chunk
-	// 	})
-
-	// 	response.on('end', () => {
-	// 		console.log(chalk.bgGreen(' Плучены данные о погоде '))
-	// 		console.log(JSON.parse(res))
-	// 	})
-	// })
-	
 }
 
 export {  getWeather, getIcon }
